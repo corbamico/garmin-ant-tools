@@ -192,6 +192,30 @@ garmin_save_runs/fast:
 	$(MAKE) -f CMakeFiles/garmin_save_runs.dir/build.make CMakeFiles/garmin_save_runs.dir/build
 .PHONY : garmin_save_runs/fast
 
+antfs_garmin.o: antfs_garmin.cpp.o
+.PHONY : antfs_garmin.o
+
+# target to build an object file
+antfs_garmin.cpp.o:
+	$(MAKE) -f CMakeFiles/garmin-ant.dir/build.make CMakeFiles/garmin-ant.dir/antfs_garmin.cpp.o
+.PHONY : antfs_garmin.cpp.o
+
+antfs_garmin.i: antfs_garmin.cpp.i
+.PHONY : antfs_garmin.i
+
+# target to preprocess a source file
+antfs_garmin.cpp.i:
+	$(MAKE) -f CMakeFiles/garmin-ant.dir/build.make CMakeFiles/garmin-ant.dir/antfs_garmin.cpp.i
+.PHONY : antfs_garmin.cpp.i
+
+antfs_garmin.s: antfs_garmin.cpp.s
+.PHONY : antfs_garmin.s
+
+# target to generate assembly for a file
+antfs_garmin.cpp.s:
+	$(MAKE) -f CMakeFiles/garmin-ant.dir/build.make CMakeFiles/garmin-ant.dir/antfs_garmin.cpp.s
+.PHONY : antfs_garmin.cpp.s
+
 byte_util.o: byte_util.c.o
 .PHONY : byte_util.o
 
@@ -639,6 +663,9 @@ help:
 	@echo "... garmin_gpx"
 	@echo "... garmin_save_runs"
 	@echo "... rebuild_cache"
+	@echo "... antfs_garmin.o"
+	@echo "... antfs_garmin.i"
+	@echo "... antfs_garmin.s"
 	@echo "... byte_util.o"
 	@echo "... byte_util.i"
 	@echo "... byte_util.s"
